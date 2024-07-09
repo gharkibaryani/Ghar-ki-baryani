@@ -50,53 +50,19 @@ nav ul li a {
 
 .hero {
     position: relative;
-    width: 100%;
-    height: 690px;
-    max-width: 1200px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 2em 0;
-}
-
-.hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/hero-image.jpg');
-    background-size: cover;
-    background-position: center;
-    animation: slide 20s infinite linear;
-}
-
-@keyframes slide {
-    0% {
-        transform: scale(1) translateX(0);
-    }
-    50% {
-        transform: scale(1.1) translateX(-10%);
-    }
-    100% {
-        transform: scale(1) translateX(0);
-    }
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-    color: white;
     text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.hero-content h2 {
-    font-size: 2.5em;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 0.5em 1em;
-    border-radius: 10px;
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 690px;
+    object-fit: cover;
 }
 
 section {
@@ -174,18 +140,52 @@ video {
     max-width: 1200px;
     margin: 2em 0;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contact a {
+    color: #16D9EB;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
 
 footer {
     background-color: #826D42;
     color: white;
+    padding: 1em 0;
     text-align: center;
-    padding: 1em;
     width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Pacifico', cursive;
 }
 
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-item img {
+        width: 100%;
+        height: auto;
+    }
+
     .video-container {
         flex-direction: column;
     }
