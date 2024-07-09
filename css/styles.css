@@ -64,15 +64,7 @@ nav ul li a:hover {
     overflow: hidden;
     height: 684px; /* Hero section height */
     margin: 2em 0;
-}
-
-.hero-image {
-    width: 778px; /* Hero image width */
-    height: 100%;
-    max-width: 100%;
-    background-image: url('../images/hero-image.jpg'); /* Hero image background */
-    background-size: cover;
-    background-position: center;
+    text-align: center; /* Center hero content */
 }
 
 .hero-content {
@@ -80,7 +72,6 @@ nav ul li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
     z-index: 1;
     color: white;
 }
@@ -90,6 +81,16 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.5); /* Hero title background color */
     padding: 0.5em 1em;
     border-radius: 10px;
+}
+
+.hero-image {
+    width: 100%; /* Full width hero image */
+    height: auto;
+    max-width: 778px; /* Adjusted maximum width for larger screens */
+    margin: 0 auto; /* Center hero image */
+    background-image: url('../images/hero-image.jpg'); /* Hero image background */
+    background-size: cover;
+    background-position: center;
 }
 
 /* Menu section styles */
@@ -137,6 +138,34 @@ nav ul li a:hover {
     background-color: #09636B;
 }
 
+/* About section styles */
+#about {
+    text-align: center;
+    padding: 2em 0;
+}
+
+#about h2 {
+    margin-bottom: 2em;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.video-item {
+    width: 100%;
+    max-width: 800px; /* Adjust maximum width as needed */
+    margin-bottom: 20px;
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 /* Order section styles */
 #order {
     text-align: center;
@@ -145,25 +174,6 @@ nav ul li a:hover {
 
 #order-form {
     /* Order form styles */
-}
-
-/* About section styles */
-#about {
-    text-align: center;
-    padding: 2em 0;
-}
-
-.video-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.video-container video {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
 }
 
 /* Contact section styles */
