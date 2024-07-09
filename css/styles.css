@@ -62,13 +62,14 @@ nav ul li a:hover {
 .hero {
     position: relative;
     overflow: hidden;
-    height: 690px; /* Hero section height */
+    height: 684px; /* Hero section height */
     margin: 2em 0;
 }
 
 .hero-image {
-    width: 100%;
+    width: 778px; /* Hero image width */
     height: 100%;
+    max-width: 100%;
     background-image: url('../images/hero-image.jpg'); /* Hero image background */
     background-size: cover;
     background-position: center;
@@ -212,5 +213,10 @@ footer {
 
     .hero {
         height: 400px; /* Adjust hero height for smaller screens */
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 400px; /* Adjust height for smaller screens */
     }
 }
