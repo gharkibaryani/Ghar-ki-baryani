@@ -65,6 +65,9 @@ nav ul li a:hover {
     height: 684px; /* Hero section height */
     margin: 2em 0;
     text-align: center; /* Center hero content */
+    background-image: url('images/hero-image.jpg'); /* Hero image background */
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-content {
@@ -81,16 +84,6 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.5); /* Hero title background color */
     padding: 0.5em 1em;
     border-radius: 10px;
-}
-
-.hero-image {
-    width: 100%; /* Full width hero image */
-    height: auto;
-    max-width: 778px; /* Adjusted maximum width for larger screens */
-    margin: 0 auto; /* Center hero image */
-    background-image: url('../images/hero-image.jpg'); /* Hero image background */
-    background-size: cover;
-    background-position: center;
 }
 
 /* Menu section styles */
@@ -207,16 +200,10 @@ footer {
     clear: both;
     position: relative;
     margin-top: 20px;
-    bottom: 0;
-    width: 100%;
 }
 
 /* Responsive design */
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 90%; /* Adjust container width for smaller screens */
-    }
-
+@media (max-width: 768px) {
     .menu-item {
         width: 100%; /* Full width for menu items on smaller screens */
     }
@@ -225,8 +212,11 @@ footer {
         height: 400px; /* Adjust hero height for smaller screens */
     }
 
-    .hero-image {
-        width: 100%;
-        height: 400px; /* Adjust height for smaller screens */
+    .hero-content {
+        top: 40%; /* Adjust hero content position */
+    }
+
+    .hero-content h2 {
+        font-size: 2.5em; /* Adjust hero title font size */
     }
 }
